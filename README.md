@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="dunlai-banner.svg" width="100%" alt="dunlai">
 </div>
@@ -6,7 +5,7 @@
 <br>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Courier+New&size=17&duration=2500&pause=900&color=A78BFA&center=true&vCenter=true&width=750&lines=Hi+there+—+I'm+Dunlai+%2F+dunlaixyz;Discord+Bot+Developer+%26+Systems+Programmer;Building+with+JS+·+C%2B%2B+·+Python;Always+learning%2C+always+shipping...;Open+to+collaborate+on+web+projects" alt="typing">
+  <img src="https://readme-typing-svg.demolab.com?font=Courier+New&size=17&duration=2500&pause=900&color=A78BFA&center=true&vCenter=true&width=750&lines=dunlaixyz;Discord+Bot+Developer;JavaScript+%2F+C%2B%2B+%2F+Python;Always+building...;Open+to+collaborate" alt="typing">
 </div>
 
 <br>
