@@ -2,7 +2,7 @@
   <img src="rainbow.svg" alt="Dunlai" width="100%">
 </p>
 
-# Hi there 👋, I'm Dunlai
+# Dunlai ♨️
 
 ### 💻 Currently...
 - 🔭 I’m currently working on **Discord Bot**
