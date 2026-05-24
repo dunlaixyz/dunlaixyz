@@ -1,0 +1,37 @@
+<svg fill="none" viewBox="0 0 600 200" width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .rainbow-text {
+          font-size: 80px;
+          font-weight: bold;
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background-image: linear-gradient(
+            to right,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            indigo,
+            violet
+          );
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: shine 1.5s linear infinite;
+        }
+
+        @keyframes shine {
+          to {
+            background-position: 200% center;
+          }
+        }
+      </style>
+      <div class="rainbow-text">
+        Dunlai
+      </div>
+    </div>
+  </foreignObject>
+</svg>
