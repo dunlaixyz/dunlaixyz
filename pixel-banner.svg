@@ -1,0 +1,72 @@
+<svg fill="none" viewBox="0 0 800 220" width="800" height="220" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nền tối -->
+  <rect width="800" height="220" fill="#0d1117" />
+  
+  <!-- Định nghĩa khối pixel vuông -->
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');
+      
+      .pixel-block {
+        animation: floatUp 3s infinite;
+        opacity: 0;
+      }
+      .pixel-block:nth-child(1) { animation-delay: 0s; }
+      .pixel-block:nth-child(2) { animation-delay: 0.5s; }
+      .pixel-block:nth-child(3) { animation-delay: 1s; }
+      .pixel-block:nth-child(4) { animation-delay: 1.5s; }
+      .pixel-block:nth-child(5) { animation-delay: 2s; }
+      
+      @keyframes floatUp {
+        0% { transform: translateY(0); opacity: 0; }
+        20% { opacity: 1; }
+        100% { transform: translateY(-200px); opacity: 0; }
+      }
+      
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      
+      .title {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 36px;
+        fill: #ffffff;
+        text-shadow: 0 0 10px #fff;
+        animation: blink 1.5s infinite;
+      }
+      .subtitle {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 14px;
+        fill: #aaaaaa;
+      }
+    </style>
+  </defs>
+  
+  <!-- Các khối pixel bay lên (mô phỏng hiệu ứng pixel particles) -->
+  <rect class="pixel-block" x="50" y="180" width="8" height="8" fill="#ffffff" rx="0" />
+  <rect class="pixel-block" x="150" y="160" width="8" height="8" fill="#cccccc" rx="0" />
+  <rect class="pixel-block" x="300" y="190" width="8" height="8" fill="#ffffff" rx="0" />
+  <rect class="pixel-block" x="450" y="170" width="8" height="8" fill="#999999" rx="0" />
+  <rect class="pixel-block" x="600" y="185" width="8" height="8" fill="#ffffff" rx="0" />
+  <rect class="pixel-block" x="700" y="165" width="8" height="8" fill="#cccccc" rx="0" />
+  <rect class="pixel-block" x="100" y="150" width="6" height="6" fill="#ffffff" rx="0" />
+  <rect class="pixel-block" x="350" y="175" width="6" height="6" fill="#aaaaaa" rx="0" />
+  <rect class="pixel-block" x="550" y="155" width="6" height="6" fill="#ffffff" rx="0" />
+  <rect class="pixel-block" x="750" y="180" width="6" height="6" fill="#cccccc" rx="0" />
+  
+  <!-- Viền pixel xung quanh (tạo khung vuông) -->
+  <rect x="5" y="5" width="790" height="210" fill="none" stroke="#ffffff" stroke-width="2" rx="0" stroke-dasharray="4,4" />
+  <rect x="10" y="10" width="780" height="200" fill="none" stroke="#555555" stroke-width="1" rx="0" />
+  
+  <!-- Tên chính: DUNLAI -->
+  <text x="400" y="100" text-anchor="middle" class="title">DUNLAI</text>
+  
+  <!-- Tên phụ: HoangTuDun!!? -->
+  <text x="400" y="150" text-anchor="middle" class="subtitle">HoangTuDun!!?</text>
+  
+  <!-- Các hạt pixel nhỏ trang trí dưới chân chữ -->
+  <rect x="200" y="165" width="4" height="4" fill="#ffffff" opacity="0.6" />
+  <rect x="400" y="165" width="4" height="4" fill="#ffffff" opacity="0.6" />
+  <rect x="600" y="165" width="4" height="4" fill="#ffffff" opacity="0.6" />
+</svg>
