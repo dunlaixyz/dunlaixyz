@@ -1,6 +1,51 @@
-<svg fill="none" viewBox="0 0 800 200" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 800 200" width="800" height="200" xmlns="http://www.w3.org/20<svg fill="none" viewBox="0 0 800 200" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
   <rect width="800" height="200" fill="#0a0a0a" />
   <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      
+      @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+      @keyframes blinkText {
+        0%, 100% { fill: #ff4d4d; }
+        50% { fill: #b30000; }
+      }
+      @keyframes borderGlow {
+        0%, 100% { stroke: #ff4d4d; }
+        50% { stroke: #00ff00; }
+      }
+      @keyframes floatUp {
+        0% { transform: translateY(0); opacity: 0; }
+        20% { opacity: 1; }
+        100% { transform: translateY(-200px); opacity: 0; }
+      }
+      
+      .marquee-text {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 54px;
+        font-weight: bold;
+        animation: marquee 8s linear infinite, blinkText 1.5s ease-in-out infinite;
+      }
+      .glow-border {
+        animation: borderGlow 2s linear infinite;
+      }
+      .particle {
+        animation: floatUp 3s infinite;
+      }
+    </style>
+  </defs>
+  <rect x="10" y="10" width="780" height="180" fill="none" stroke="#ff4d4d" stroke-width="2" rx="4" class="glow-border" />
+  <rect x="15" y="15" width="770" height="170" fill="none" stroke="#555" stroke-width="1" rx="2" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="marquee-text">dunlaixyz    hoangtudun    dunlaixyz    hoangtudun</text>
+  <rect class="particle" x="50" y="180" width="6" height="6" fill="#00ff00" style="animation-delay: 0s;" />
+  <rect class="particle" x="150" y="160" width="6" height="6" fill="#00ff00" style="animation-delay: 0.5s;" />
+  <rect class="particle" x="280" y="190" width="6" height="6" fill="#00ff00" style="animation-delay: 1s;" />
+  <rect class="particle" x="450" y="170" width="6" height="6" fill="#00ff00" style="animation-delay: 1.5s;" />
+  <rect class="particle" x="600" y="185" width="6" height="6" fill="#00ff00" style="animation-delay: 2s;" />
+  <rect class="particle" x="720" y="165" width="6" height="6" fill="#00ff00" style="animation-delay: 0.8s;" />
+</svg>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
       
