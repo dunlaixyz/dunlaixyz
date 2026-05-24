@@ -1,52 +1,48 @@
 <svg fill="none" viewBox="0 0 800 200" width="800" height="200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Nền tối giống GitHub -->
-  <rect width="800" height="200" fill="#0d1117" />
-  
-  <!-- Định nghĩa hình lông vũ đơn giản -->
+  <rect width="800" height="200" fill="#0a0a0a" />
   <defs>
-    <g id="feather">
-      <path d="M0,0 C-4,-12 -9,-8 -7,-2 C-5,4 -2,5 0,0" fill="white" opacity="0.8" />
-      <line x1="0" y1="0" x2="-3" y2="-10" stroke="white" stroke-width="0.5" opacity="0.5"/>
-    </g>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      
+      @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+      @keyframes blinkText {
+        0%, 100% { fill: #ff4d4d; }
+        50% { fill: #b30000; }
+      }
+      @keyframes borderGlow {
+        0%, 100% { stroke: #ff4d4d; }
+        50% { stroke: #00ff00; }
+      }
+      @keyframes floatUp {
+        0% { transform: translateY(0); opacity: 0; }
+        20% { opacity: 1; }
+        100% { transform: translateY(-200px); opacity: 0; }
+      }
+      
+      .marquee-text {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 54px;
+        font-weight: bold;
+        animation: marquee 8s linear infinite, blinkText 1.5s ease-in-out infinite;
+      }
+      .glow-border {
+        animation: borderGlow 2s linear infinite;
+      }
+      .particle {
+        animation: floatUp 3s infinite;
+      }
+    </style>
   </defs>
-  
-  <!-- Các hạt lông vũ bay với animation khác nhau -->
-  <use href="#feather" x="100" y="180" style="animation: float1 4s infinite;">
-    <animateTransform attributeName="transform" type="translate" values="0,0; -10,-120; 5,-180" dur="4s" repeatCount="indefinite" />
-  </use>
-  <!-- Sử dụng CSS animation cho các hạt còn lại -->
-  <use href="#feather" x="250" y="160" style="animation: float2 5s infinite 1s;" />
-  <use href="#feather" x="400" y="170" style="animation: float3 3.5s infinite 0.5s;" />
-  <use href="#feather" x="550" y="150" style="animation: float1 6s infinite 2s;" />
-  <use href="#feather" x="700" y="180" style="animation: float2 4.5s infinite 0.8s;" />
-  <use href="#feather" x="150" y="140" style="animation: float3 5.5s infinite 1.2s;" />
-  <use href="#feather" x="650" y="130" style="animation: float1 4.8s infinite 0.3s;" />
-  
-  <!-- Chữ chính "Dunlai" -->
-  <text x="400" y="110" text-anchor="middle" font-size="80" font-weight="bold" font-family="Arial, sans-serif" fill="white" stroke="black" stroke-width="2" style="animation: pulse 2s infinite;">
-    Dunlai
-  </text>
-  
-  <!-- CSS Animations -->
-  <style>
-    @keyframes float1 {
-      0% { transform: translateY(0) scale(1); opacity: 0; }
-      10% { opacity: 0.9; }
-      100% { transform: translateY(-140px) scale(0.2); opacity: 0; }
-    }
-    @keyframes float2 {
-      0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0; }
-      10% { opacity: 0.8; }
-      100% { transform: translateY(-120px) rotate(25deg) scale(0.3); opacity: 0; }
-    }
-    @keyframes float3 {
-      0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0; }
-      10% { opacity: 0.7; }
-      100% { transform: translateY(-100px) rotate(-20deg) scale(0.4); opacity: 0; }
-    }
-    @keyframes pulse {
-      0%, 100% { fill: #ffffff; stroke: #000000; }
-      50% { fill: #cccccc; stroke: #333333; }
-    }
-  </style>
+  <rect x="10" y="10" width="780" height="180" fill="none" stroke="#ff4d4d" stroke-width="2" rx="4" class="glow-border" />
+  <rect x="15" y="15" width="770" height="170" fill="none" stroke="#555" stroke-width="1" rx="2" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="marquee-text">dunlaixyz    hoangtudun    dunlaixyz    hoangtudun</text>
+  <rect class="particle" x="50" y="180" width="6" height="6" fill="#00ff00" style="animation-delay: 0s;" />
+  <rect class="particle" x="150" y="160" width="6" height="6" fill="#00ff00" style="animation-delay: 0.5s;" />
+  <rect class="particle" x="280" y="190" width="6" height="6" fill="#00ff00" style="animation-delay: 1s;" />
+  <rect class="particle" x="450" y="170" width="6" height="6" fill="#00ff00" style="animation-delay: 1.5s;" />
+  <rect class="particle" x="600" y="185" width="6" height="6" fill="#00ff00" style="animation-delay: 2s;" />
+  <rect class="particle" x="720" y="165" width="6" height="6" fill="#00ff00" style="animation-delay: 0.8s;" />
 </svg>
