@@ -1,0 +1,85 @@
+<svg viewBox="0 0 800 220" width="800" height="220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#07070f"/>
+      <stop offset="50%"  stop-color="#0e0820"/>
+      <stop offset="100%" stop-color="#07070f"/>
+    </linearGradient>
+    <pattern id="grid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="0.8" cy="0.8" r="0.7" fill="#18183a"/>
+    </pattern>
+    <clipPath id="clip">
+      <rect x="20" y="68" width="760" height="84"/>
+    </clipPath>
+    <style>
+      @keyframes scroll {
+        0%   { transform: translateX(820px);   }
+        100% { transform: translateX(-2200px); }
+      }
+      @keyframes colorCycle {
+        0%   { fill: #a78bfa; }
+        20%  { fill: #f472b6; }
+        40%  { fill: #38bdf8; }
+        60%  { fill: #34d399; }
+        80%  { fill: #fb923c; }
+        100% { fill: #a78bfa; }
+      }
+      @keyframes borderPulse {
+        0%, 100% { stroke: #6d28d9; }
+        50%       { stroke: #be185d; }
+      }
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 0;   }
+        to   { stroke-dashoffset: -52; }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 0.3; }
+        50%       { opacity: 1;   }
+      }
+      @keyframes subBlink {
+        0%, 100% { opacity: 0.25; }
+        50%       { opacity: 0.7;  }
+      }
+      @keyframes linePulse {
+        0%, 100% { opacity: 0.15; }
+        50%       { opacity: 0.45; }
+      }
+      .txt {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 46px;
+        font-weight: 900;
+        letter-spacing: 4px;
+        animation: scroll 16s linear infinite, colorCycle 6s ease-in-out infinite;
+      }
+      .b1 { animation: borderPulse 3s ease-in-out infinite; }
+      .b2 {
+        stroke-dasharray: 8 5;
+        animation: borderPulse 3s ease-in-out infinite, dashFlow 2s linear infinite;
+      }
+      .corner { animation: blink 3s ease-in-out infinite; }
+      .sub    { animation: subBlink 4s ease-in-out infinite; }
+      .hline  { animation: linePulse 5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="800" height="220" fill="url(#bg)"/>
+  <rect width="800" height="220" fill="url(#grid)"/>
+
+  <line x1="0" y1="60"  x2="800" y2="60"  stroke="#1e1e45" stroke-width="1" class="hline"/>
+  <line x1="0" y1="158" x2="800" y2="158" stroke="#1e1e45" stroke-width="1" class="hline" style="animation-delay:2s"/>
+
+  <rect x="4"  y="4"  width="792" height="212" rx="9" fill="none" stroke-width="1.8" class="b1"/>
+  <rect x="11" y="11" width="778" height="198" rx="5" fill="none" stroke-width="0.7" class="b2"/>
+
+  <text x="20"  y="40"  font-family="'Courier New',monospace" font-size="11" fill="#7c3aed" class="corner">┌──[ dunlai@dev ]────────────────────────────────────</text>
+  <text x="590" y="40"  font-family="'Courier New',monospace" font-size="11" fill="#7c3aed" class="corner">──[ 2025 ]──┐</text>
+  <text x="20"  y="216" font-family="'Courier New',monospace" font-size="11" fill="#7c3aed" class="corner">└──[ status : online ]───────────────────────────────</text>
+  <text x="573" y="216" font-family="'Courier New',monospace" font-size="11" fill="#7c3aed" class="corner">──[ v2.0.0 ]──┘</text>
+
+  <g clip-path="url(#clip)">
+    <text y="128" class="txt">dunlaixyz  ◆  hoangtudun  ◆  dunlaixyz  ◆  hoangtudun  ◆</text>
+  </g>
+
+  <text x="400" y="178" text-anchor="middle" font-family="'Courier New',monospace" font-size="12" letter-spacing="7" fill="#5b21b6" class="sub">DISCORD BOT DEV  ·  JS  /  C++  /  PYTHON</text>
+  <text x="400" y="200" text-anchor="middle" font-family="'Courier New',monospace" font-size="11" letter-spacing="5" fill="#2e1065" class="corner">· · · · · · · · · · · · · · · · · · · · · · · · ·</text>
+</svg>
